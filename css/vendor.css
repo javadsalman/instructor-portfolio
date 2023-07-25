@@ -1698,6 +1698,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   height: auto;
   top: 0;
   left: 0;
+  object-fit: contain;
 }
 
 /*
