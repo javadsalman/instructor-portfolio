@@ -5,9 +5,14 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Javad Salman</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Proqramlaşdırmanı olnine dərslər ilə öyrən - Javad Salman</title>
+    <meta name="description" content="Cavad müəllim ilə onlayn proqramlaşdırma dərslərinə qoşulun. React dərsləri, Javascript dərsləri, Python dərsləri, Github dərsləri, Django dərsləri mövcuddur.">
+    <meta name="author" content="Javad Salman">
+    <meta property="og:url"           content="https://javadsalman.github.io/portfolio/"/>
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Proqramlaşdırmanı olnine dərslər ilə öyrən - Javad Salman" />
+	<meta property="og:description"   content="Cavad müəllim ilə onlayn proqramlaşdırma dərslərinə qoşulun. React dərsləri, Javascript dərsləri, Python dərsləri, Github dərsləri, Django dərsləri mövcuddur." />
+	<meta property="og:image"         content="images/me-black-white.jpeg" />
 
     <!-- mobile specific metas
     ================================================== -->
@@ -15,9 +20,9 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
     <!-- script
     ================================================== -->
@@ -35,21 +40,22 @@
     
     <!-- preloader
     ================================================== -->
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div id="loader" class="dots-jump">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div> -->
+    </div>
 
     <!-- header
     ================================================== -->
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
+            <a class="site-logo" href="index.min.html">
+                <i class="fas fa-code"></i>
+                <div>Javad Salman</div>
             </a>
         </div> <!-- end header-logo -->
 
@@ -62,31 +68,31 @@
             <div class="header-nav__content">
                 
                 <ul class="header-nav__list">
-                    <li><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li><a class="smoothscroll"  href="#home" title="giriş">Giriş</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="tədris paketləri">Tədris Paketləri</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="metodikamız">Metodikamız</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="layiheler">Layihələr</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="əlaqə">Əlaqə</a></li>
                 </ul>
     
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+                <!-- <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p> -->
     
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/javadsalman"><i class="fab fa-github"></i></a>
                     </li>
                     <li>
+                        <a href="https://www.linkedin.com/in/javadsalman/"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/cavad.salmanov/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <!-- <li>
                         <a href="#0"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
                         <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div> <!-- end header-nav__content -->
@@ -117,7 +123,7 @@
                 </h1>
 
                 <h3>
-                Web Proqramçı və Təlimçi
+                Proqramçı və Təlimçi
                 </h3>
 
                 <!-- <div class="home-content__video">
@@ -128,10 +134,10 @@
                 </div> -->
 
                 <div class="home-content__button">
-                    <a href="#about" class="smoothscroll btn btn--primary btn--large">
-                        Ətraflı
+                    <a href="#services" class="smoothscroll btn btn--primary btn--large">
+                        Dərslər
                     </a>
-                    <a href="#contact" class="smoothscroll btn btn--large">
+                    <a href="#contact" class="btn btn--large wp-link">
                         Whatsapp
                     </a>
                 </div>
@@ -148,19 +154,13 @@
 
         <ul class="home-social">
             <li>
-                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="https://github.com/javadsalman"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                <a href="https://www.linkedin.com/in/javadsalman/"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>Linkedin</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+                <a href="https://www.facebook.com/cavad.salmanov/"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
         </ul> <!-- end home-social -->
 
@@ -195,6 +195,7 @@
                     <ul class="my-0">
                         <li>Basic - 1.5 ay</li>
                         <li>Advanced - 1.5 ay</li>
+                        <li>Uşaqlar - 3 ay</li>
                     </ul>
                     <div class="font-weight-bold">Mövzular:</div>
                     <ul>
@@ -254,7 +255,11 @@
                     <div>
                         HTML və CSS bütün vebsaytların əsasını təşkil edir. Heç bir vebsaytı bunlarsız təsəvvür etmək olmaz. Əgər gözoxşayan və səliqəli veb səhifələr yaratmaq istəyirsinizsə, HTML və CSS öyrənməyiniz vacibdir.
                     </div>
-                    <div class="font-weight-bold">Tədris Müddəti: 2 ay</div>
+                    <div class="font-weight-bold">Tədris Müddəti</div>
+                    <ul class="my-0">
+                        <li>Böyüklər - 2 ay</li>
+                        <li>Uşaqlar - 2 ay</li>
+                    </ul>
                     <div class="font-weight-bold">Mövzular:</div>
                     <ul>
                         <li>HTML</li>
@@ -306,6 +311,7 @@
                     <ul class="my-0">
                         <li>Basic - 1.5 ay</li>
                         <li>Advanced - 2 ay</li>
+                        <li>Uşaqlar - 4 ay</li>
                     </ul>
                     <div class="font-weight-bold">Mövzular:</div>
                     <ul>
@@ -713,26 +719,21 @@
 
         <div class="row section-header text-center narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Our Clients</h3>
-                <h1 class="display-1">Who we have work with</h1>
+                <h3 class="subhead">Fəxrlərimiz</h3>
+                <h1 class="display-1">Məzun olmuş tələbələrin işlədiyi şirkətlər</h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row clients-wrap" data-aos="fade-up">
             <div class="col-twelve">
                 <ul class="clients">
-                    <li><a href="#0">Uber</a></li>
-                    <li><a href="#0">Spotify</a></li>
-                    <li><a href="#0">Grab</a></li>
-                    <li><a href="#0">Dropbox</a></li>
-                    <li><a href="#0">IBM</a></li>
-                    <li><a href="#0">Microsoft</a></li>
-                    <li><a href="#0">Xiaomi</a></li>
-                    <li><a href="#0">Adidas</a></li>
-                    <li><a href="#0">Mozilla</a></li>
-                    <li><a href="#0">Apple</a></li>
-                    <li><a href="#0">Google</a></li>
-                    <li><a href="#0">Asus</a></li>
+                    <li><a href="#0">Metaflix</a></li>
+                    <li><a href="#0">Azerconnect</a></li>
+                    <li><a href="#0">InterProb</a></li>
+                    <li><a href="#0">Buta Group</a></li>
+                    <li><a href="#0">Websuper</a></li>
+                    <li><a href="#0">Compar Academy</a></li>
+                    <li><a href="#0">Titibon</a></li>
                 </ul>
             </div>
         </div>
@@ -742,23 +743,17 @@
 
     <!-- testimonies
     ================================================== -->
-    <section class="s-testimonials">
-
+    <!-- <section class="s-testimonials">
         <div class="testimonials__icon" data-aos="fade-up"></div>
-
         <div class="row testimonials narrow">
-
             <div class="col-full testimonials__slider" data-aos="fade-up">
-
                 <div class="testimonials__slide">
-                    <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
-                    Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
+                    <p>Proqramlaşdırma bildiklərinizlə əlaqəli deyil</p>
                     <div class="testimonials__author">
                         Tim Cook
                         <span>CEO, Apple</span>
                     </div>
-                </div> <!-- end testimonials__slide -->
-
+                </div>
                 <div class="testimonials__slide">
                     <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
                     Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
@@ -766,8 +761,7 @@
                         Sundar Pichai
                         <span>CEO, Google</span>
                     </div>
-                </div> <!-- end testimonials__slide -->
-
+                </div>
                 <div class="testimonials__slide">
                     <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
                     Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
@@ -775,13 +769,12 @@
                         Satya Nadella
                         <span>CEO, Microsoft</span>
                     </div>
-                </div> <!-- end testimonials__slide -->
-                
-            </div> <!-- end testimonials__slider -->
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-        </div> <!-- end testimonials -->
-
-    </section> <!-- end s-testimonials -->
+    <!-- end s-testimonials -->
 
 
     <!-- contact
@@ -794,39 +787,34 @@
 
         <div class="row section-header narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Keep In Touch</h3>
-                <h1 class="display-1">Feel free to contact us for any <br> project idea or collaboration</h1>
+                <h3 class="subhead">Əlaqə</h3>
+                <h1 class="display-1">İndi bu dəqiqə müraciət edin və çəkinmədən istədiyiniz sualı verin. Aşağıdakı linklərə klikləyərək əlaqəyə keçin</h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row contact-main" data-aos="fade-up">
+        <div class="row contact-main my-0" data-aos="fade-up">
             <div class="col-full">
                 <p class="contact-email">
-                    <a href="mailto:#0">sayhello@sublime.com</a>
+                    <span class="call-button">Zəng</span>
                 </p>
-                <p class="contact-address">
-                1600 Amphitheatre Parkway <br>
-                Mountain View, CA, 94043 US 
+                <p class="contact-email">
+                    <span class="wp-button">Whatsapp</span>
+                </p>
+                <p class="contact-email">
+                    <a href="mailto:#javadsalman99@gmail.com">Email</a>
                 </p>
                 <p class="contact-numbers">
-                +1 (917) 123 456 &nbsp; +1 (917) 333 987
                 </p>
 
                 <ul class="contact-social">
                     <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/javadsalman"><i class="fab fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/javadsalman/"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                        <a href="https://www.facebook.com/cavad.salmanov/"><i class="fab fa-facebook"></i></a>
                     </li>
                 </ul>
             </div>
@@ -840,7 +828,6 @@
     <footer>
         <div class="row">
             <div class="col-full ss-copyright">
-                <span>© Copyright Sublime 2018</span> 
                 <span>Design by <a href="https://www.styleshout.com/">Styleshout</a></span>
             </div>
         </div>
@@ -895,6 +882,6 @@
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 
 </body>

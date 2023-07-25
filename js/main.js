@@ -6,6 +6,24 @@
 (function($) {
 
     "use strict";
+
+    function getPhoneNumber() {
+        return '+' + '9'.repeat(2) + 4 + '7'.repeat(2) + 6 + '3'.repeat(3) + 747
+    }
+    console.log(getPhoneNumber())
+
+    $('.call-button').click(function() {
+        window.open('tel:' + getPhoneNumber())
+    })
+
+    $('.wp-button').click(function() {
+        window.open('https://wa.me/' + getPhoneNumber())
+    })
+
+    $('.wp-link').attr('href', 'https://wa.me/' + getPhoneNumber());
+    
+
+    $('.contact-numbers').html(getPhoneNumber())
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration

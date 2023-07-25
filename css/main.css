@@ -79,6 +79,15 @@
   line-height: 25px;
 }
 
+.site-logo {
+  font-size: 30px;
+  color: white;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
 html {
   font-size: 10px;
 }
@@ -3659,7 +3668,6 @@ html.no-csstransitions .home-content__main {
 .contact-main {
   font-size: 3.3rem;
   line-height: 1.636;
-  margin-top: 9rem;
 }
 
 .contact-main [class*="contact-"] {
@@ -3670,7 +3678,9 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 3.6rem;
 }
 
-.contact-email a {
+.contact-email a, .contact-email span{
+  transition-duration: 300ms;
+  cursor: pointer;
   font-size: 9rem;
   font-weight: 700;
   line-height: 1.2;
@@ -3679,7 +3689,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-email a:hover,
-.contact-email a:focus {
+.contact-email a:focus,
+.contact-email span:hover,
+.contact-email span:focus {
   border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -3722,7 +3734,7 @@ html.no-csstransitions .home-content__main {
     font-size: 3.1rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 7.6rem;
   }
 
@@ -3738,7 +3750,7 @@ html.no-csstransitions .home-content__main {
     font-size: 3rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 7.2rem;
   }
 
@@ -3749,7 +3761,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.8rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 6.2rem;
   }
 
@@ -3764,7 +3776,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.6rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 5.5rem;
   }
 
@@ -3779,7 +3791,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.4rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 3.8rem;
   }
 
@@ -3811,7 +3823,7 @@ html.no-csstransitions .home-content__main {
     font-size: 1.8rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 3rem;
   }
 
@@ -3823,7 +3835,7 @@ html.no-csstransitions .home-content__main {
     margin-top: 4.5rem;
   }
 
-  .contact-email a {
+  .contact-email a, .contact-email span{
     font-size: 2.5rem;
   }
 
