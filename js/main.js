@@ -10,8 +10,6 @@
     function getPhoneNumber() {
         return '+' + '9'.repeat(2) + 4 + '7'.repeat(2) + 6 + '3'.repeat(3) + 747
     }
-    console.log(getPhoneNumber())
-
     $('.call-button').click(function() {
         window.open('tel:' + getPhoneNumber())
     })
